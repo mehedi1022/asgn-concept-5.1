@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble</title>
+    <style>
+        div {
+            min-height: 200px;
+            min-width: 100px;
+            border-radius: 10px;
+            margin: 50px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grandparant">
+        grandparant
+        <div id="parent">
+            parent
+            <div id="child">child</div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("grandparant").addEventListener(
+            "click",
+            function () {
+                console.log("Grandparant");
+                // e.stopPropagation();
+            },
+            true
+        );
+        //asdasdas
+
+        document.getElementById("parant").addEventListener(
+            "click",
+            function (e) {
+                console.log("parant");
+                e.stopPropagation();
+            },
+            true
+        );
+
+        //asdasdasd
+        document.getElementById("child").addEventListener(
+            "click",
+            function () {
+                console.log("child");
+                // e.stopPropagation();
+            },
+            true
+        );
+    </script>
+</body>
+
+</html>
