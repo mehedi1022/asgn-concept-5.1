@@ -80,7 +80,7 @@ console.log("connected");
 // console.log(ul.textContent);
 
 // const ul = document.querySelector("ul");
-// ul.innerHTML = "<p>Hello</p>";
+// ul.innerH TML = "<p>Hello</p>";
 
 // document.querySelector("h2").removeAttribute("id");
 
