@@ -19,9 +19,11 @@
             const text = event.target.value;
             const deleteButton = document.getElementById('btn-delete');
             if (text === 'delete') {
-                deleteButto.removeAttribute('disabled')
+                deleteButton.removeAttribute('disabled');
+                
             }else{
                 deleteButton.setAttribute('disabled', true);
+                
             }
         })
         document.getElementById('btn-delete').addEventListener('click', function () {
